@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/ECE/info/java/Tp/TP4/gestionPortefeuille/src/modele/Fonds.java</file>
+            <file>file:/C:/ECE/info/java/Tp/TP4/gestionPortefeuille/src/controleur/FondsExistantException.java</file>
+            <file>file:/C:/ECE/info/java/Tp/TP4/gestionPortefeuille/src/controleur/FondsInexistantException.java</file>
+            <file>file:/C:/ECE/info/java/Tp/TP4/gestionPortefeuille/src/controleur/GestionPortefeuille.java</file>
+            <file>file:/C:/ECE/info/java/Tp/TP4/gestionPortefeuille/src/modele/Portefeuille.java</file>
+            <file>file:/C:/ECE/info/java/Tp/TP4/gestionPortefeuille/src/modele/Instrument.java</file>
+        </group>
+    </open-files>
+</project-private>
