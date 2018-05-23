@@ -11,13 +11,16 @@ package modele;
  */
 public class Fonds {
    private double amount; 
+   private String cle;
    
    public Fonds(){
        amount = 0;
+       cle = null;
    }
    
-   public Fonds(double amount){
+   public Fonds(double amount, String cle){
        this.amount = amount;
+       this.cle = cle;
    }
    
    public double getAmount(){

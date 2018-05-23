@@ -15,41 +15,46 @@ import java.util.*;
  * @author Jean
  */
 public class Portefeuille {
-     private Map<String, Fonds> fondMap;
-     private Map<String, Instrument> instrumentMap;
+     private HashMap<String, Fonds> fondMap;
+     private HashMap<String, Instrument> instrumentMap;
      
      public Portefeuille(){
-         fondMap = new HashMap<>();
-         instrumentMap = new HashMap<>();
+         fondMap = new HashMap();
+         instrumentMap = new HashMap();
      }
      
-     public Portefeuille(Map<String,Fonds> fondMap,Map<String,Instrument> instrumentMap){
+     public Portefeuille(HashMap<String,Fonds> fondMap,HashMap<String,Instrument> instrumentMap){
          this.fondMap=fondMap;
          this.instrumentMap=instrumentMap;
      }
      
-     public void rechercheFond(String fond) throws FondsInexistantException{
-         
+     public double rechercheFond(String fond) throws FondsInexistantException{
+         double amount=0;
+         if(fondMap.containsKey(fond) == true){
+             amount = fondMap.get(fond).getAmount();
+             
+         }else{
              throw new FondsInexistantException();
-         }else if(fondMap.containsKey(fond) == true){
-             return fondMap.get(fond).getAmount();
          }
-         else return 0;
+         return amount;
+         
      }
      
      public ArrayList rechercheInstrument(String instrument) throws InstrumentInexistantException{
+         ArrayList instru = new ArrayList();
          if(instrumentMap.containsKey(instrument)){
-             return instrumentMap.get(instrument).getFonds();
+             instru = instrumentMap.get(instrument).getFonds();
          }else{
              throw new InstrumentInexistantException();
          }
+         return instru;
      }
      
      public void ajouterFond(String cle, double amount) throws FondsExistantException{
          if(fondMap.containsKey(cle)){
              throw new FondsExistantException();     
          }else{
-             Fonds a = new Fonds(amount);
+             Fonds a = new Fonds(amount,cle);
              fondMap.put(cle, a);
          }
      }
