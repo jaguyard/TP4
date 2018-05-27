@@ -9,7 +9,7 @@ package modele;
  *
  * @author Jean
  */
-public class Fonds {
+public class Fonds implements Comparable<Fonds>{
    private double amount; 
    private String cle;
    
@@ -23,9 +23,37 @@ public class Fonds {
        this.cle = cle;
    }
    
+   public String getCle(){
+       return cle;
+   }
+   
    public double getAmount(){
        return amount;
    }
+
+    public boolean equals(Fonds fond){
+        if (amount == fond.getAmount()){
+            
+            return true;
+        }
+        else{
+            return false;
+        }
+    }
+    @Override
+    public int compareTo(Fonds fond){
+        double valeur1= fond.getAmount();
+        
+        if (valeur1 > amount)
+        
+            return 1;
+        
+        else if(valeur1 == amount)
+            
+            return 0;
+        else 
+            return -1;
+    }
    
    
 }

@@ -4,6 +4,9 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/ECE/info/java/Tp/TP4/TP4/gestionPortefeuille/src/modele/Portefeuille.java</file>
+            <file>file:/C:/ECE/info/java/Tp/TP4/TP4/gestionPortefeuille/src/modele/Fonds.java</file>
+            <file>file:/C:/ECE/info/java/Tp/TP4/TP4/gestionPortefeuille/src/modele/Instrument.java</file>
+            <file>file:/C:/ECE/info/java/Tp/TP4/TP4/gestionPortefeuille/src/controleur/GestionPortefeuille.java</file>
         </group>
     </open-files>
 </project-private>
